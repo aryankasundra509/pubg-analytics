@@ -1,0 +1,8 @@
+,walkDistance,boosts,heals,kills,damageDealt,weaponsAcquired,winPlacePerc
+walkDistance,1.0,0.64,0.43,0.38,0.4,0.54,0.81
+boosts,0.64,1.0,0.54,0.5,0.52,0.41,0.63
+heals,0.43,0.54,1.0,0.31,0.34,0.31,0.43
+kills,0.38,0.5,0.31,1.0,0.89,0.34,0.42
+damageDealt,0.4,0.52,0.34,0.89,1.0,0.35,0.44
+weaponsAcquired,0.54,0.41,0.31,0.34,0.35,1.0,0.58
+winPlacePerc,0.81,0.63,0.43,0.42,0.44,0.58,1.0
