@@ -10,6 +10,9 @@ st.set_page_config(
     page_icon="🎮",
     layout="wide")
 
+st.title("🎮 PUBG Analytics Dashboard")
+st.text("ML-Powered Predictions & Insights based on 4.4 Million Real PUBG Matches")
+
 @st.cache_resource #Model load karke sab resources ko rkhega apne pass
 def load_models():
     rf_model = joblib.load('rf_survival_model.pkl')
