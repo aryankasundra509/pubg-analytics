@@ -2,7 +2,7 @@
 
 A Machine Learning powered analytics dashboard built on **4.4 Million real PUBG match records**.
 
-🔴 **Live App:** [Click here to open](https://pubg-analytics-qk5qyu4k32cusjav7s5upe.streamlit.app/)
+🔴 **Live App:** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pubg-analytics-qk5qyu4k32cusjav7s5upe.streamlit.app/)
 
 ---
 
@@ -24,7 +24,7 @@ This project analyzes real PUBG match data to build two ML models:
 
 ## 📂 Dataset
 
-- **Source:** [PUBG Finish Placement Prediction — Kaggle](https://www.kaggle.com/c/pubg-finish-placement-prediction)
+- **Source:** [PUBG Finish Placement Prediction — Kaggle](https://www.kaggle.com/c/pubg-finish-placement-prediction/data?select=train_V2.csv)
 - **Size:** 4,446,966 rows × 29 columns
 - **Target:** `winPlacePerc` — Player's finish placement percentile
 
