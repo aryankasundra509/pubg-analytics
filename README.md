@@ -2,7 +2,7 @@
 
 A Machine Learning powered analytics dashboard built on **4.4 Million real PUBG match records**.
 
-🔴 **Live App:** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pubg-analytics-qk5qyu4k32cusjav7s5upe.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pubg-analytics-qk5qyu4k32cusjav7s5upe.streamlit.app/)
 
 ---
 
@@ -70,6 +70,9 @@ This project analyzes real PUBG match data to build two ML models:
 ---
 
 ## 🗂️ Project Structure
+
+```
+
 pubg-analytics/
 ├── app.py                  — Streamlit app
 ├── rf_survival_model.pkl   — Survival Predictor model
@@ -81,6 +84,8 @@ pubg-analytics/
 ├── corr_matrix.csv         — Correlation data
 ├── feature_importance.csv  — Feature importance data
 └── requirements.txt        — Dependencies
+
+```
 
 ---
 
