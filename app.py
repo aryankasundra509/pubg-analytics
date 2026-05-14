@@ -58,7 +58,7 @@ with tab1:
     match_map = {"Solo": 0, "Duo": 1, "Squad": 2, "Other": 3}
     match_encoded = match_map[match_type]
 
-    if st.button("🎮 Predict!", use_container_width=True):
+    if st.button("🎮 Predict!", type="primary", use_container_width=True):
         
         error = False
         
@@ -116,23 +116,23 @@ with tab1:
 
             tips = []
             if walk < 1500:
-                tips.append("📍 Move more — your walk distance is too low. Stay with the zone!")
+                tips.append("Move more — your walk distance is too low. Stay with the zone!")
             if boosts < 2:
-                tips.append("⚡ Use more boosts — Energy drinks and painkillers are key to late game survival!")
+                tips.append("Use more boosts — Energy drinks and painkillers are key to late game survival!")
             if heals < 2:
-                tips.append("💊 Use more heals — Keep your HP up during fights!")
+                tips.append("Use more heals — Keep your HP up during fights!")
             if weapons < 3:
-                tips.append("🔫 Loot more weapons — Having backup guns saves lives!")
+                tips.append("Loot more weapons — Having backup guns saves lives!")
             if kills == 0 and damage < 100:
-                tips.append("⚔️ Engage more — You need to deal damage to improve your placement!")
+                tips.append("Engage more — You need to deal damage to improve your placement!")
             if team_kills > 0:
-                tips.append("🚫 Stop team killing — it hurts your squad's chances!")
+                tips.append("Stop team killing — it hurts your squad's chances!")
 
             if tips:
                 for tip in tips:
                     st.markdown(f"- {tip}")
             else:
-                st.markdown("✅ Great game! Keep playing like this and Chicken Dinner is yours!")
+                st.markdown("Great game! Keep playing like this and Chicken Dinner is yours!")
 
 
 with tab2:
@@ -156,7 +156,7 @@ with tab2:
         s_walk = st.number_input("Walk Distance (m)", 0, 10000, 1000, key="seg_walk")
         s_ride = st.number_input("Ride Distance (m)", 0, 20000, 0, key="seg_ride")
 
-    if st.button("🔍 Find My Player Type!", use_container_width=True):
+    if st.button("🔍 Find Player Type!", type="primary", use_container_width=True):
 
         # Input array — same order jaise segmentation_features thi
         seg_input = np.array([[s_kills, s_damage, s_headshot,
@@ -220,19 +220,19 @@ with tab2:
         tips = []
 
         if player_type == 'Noob':
-            tips.append("📍 Focus on survival — move with the zone, don't rush fights")
-            tips.append("💊 Use heals and boosts regularly")
-            tips.append("🔫 Loot properly — get at least 2 good weapons before fighting")
+            tips.append("Focus on survival — move with the zone, don't rush fights")
+            tips.append("Use heals and boosts regularly")
+            tips.append("Loot properly — get at least 2 good weapons before fighting")
 
         elif player_type == 'Average':
-            tips.append("⚡ Use more boosts in late game — they give you an edge")
-            tips.append("⚔️ Take more fights — your damage dealt needs to improve")
-            tips.append("📍 Improve your positioning — walk more, cover more ground")
+            tips.append("Use more boosts in late game — they give you an edge")
+            tips.append("Take more fights — your damage dealt needs to improve")
+            tips.append("Improve your positioning — walk more, cover more ground")
 
         else:
-            tips.append("✅ You are already performing at a high level!")
-            tips.append("🏆 Focus on consistency — maintain these stats every match")
-            tips.append("🎯 Work on your longest kill — sniping can give extra edge")
+            tips.append("You are already performing at a high level!")
+            tips.append("Focus on consistency — maintain these stats every match")
+            tips.append("Work on your longest kill — sniping can give extra edge")
 
         for tip in tips:
             st.markdown(f"- {tip}")

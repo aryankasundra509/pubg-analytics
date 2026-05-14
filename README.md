@@ -2,7 +2,20 @@
 
 A Machine Learning powered analytics dashboard built on **4.4 Million real PUBG match records**.
 
+---
+ 
+## 🔗 Live Demo
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pubg-analytics-qk5qyu4k32cusjav7s5upe.streamlit.app/)
+
+---
+
+## 📸 Dashboard Preview
+
+![Top 10 Survival Predictor](assets/survival_predictor.png)
+![Survival Predictor Output](assets/survival_output.png)
+
+![Player Segmentation Predictor](assets/player_segmentation.png)
+![Player Segmentation Output](assets/segmentation_output.png)
 
 ---
 
@@ -16,9 +29,9 @@ This project analyzes real PUBG match data to build two ML models:
 
 ## 🚀 Features
 
-- 🎯 **Survival Predictor** — Enter your match stats and get your Top 10 probability with actionable tips
-- 👥 **Player Segmentation** — Find out your player type using K-Means Clustering
-- 📊 **EDA & Insights** — Interactive charts from 4.4M match records
+- **Survival Predictor** — Enter your match stats and get your Top 10 probability with actionable tips
+- **Player Segmentation** — Find out your player type using K-Means Clustering
+- **EDA & Insights** — Interactive charts from 4.4M match records
 
 ---
 
