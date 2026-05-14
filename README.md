@@ -2,6 +2,9 @@
 
 A Machine Learning powered analytics dashboard built on **4.4 Million real PUBG match records**.
 
+---
+
+## 🔗 Live Demo
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pubg-analytics-qk5qyu4k32cusjav7s5upe.streamlit.app/)
 
 ---
